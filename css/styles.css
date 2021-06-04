@@ -1,0 +1,264 @@
+/*** Add your styles here **/
+body {
+    background-color: #f8f8f8;
+}
+.encabezado {
+    font-size: 1.8rem;
+    font-family: 'Cabin', sans-serif;
+    color: #000000;
+}
+.encabezado span {
+    font-size: 2.5rem;
+    color: #e082a8;
+    font-family: 'Lobster', cursive;
+}
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #e082a8;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f09a';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+/** NAVEGACION **/
+.navegacion {
+    background-color: #8ed3cc;
+}   
+.navbar-light .navbar-toggler {
+    background-color: #ffffff;
+}
+.navbar-light .navbar-brand, 
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+.nav-principal {
+    background-image: url(../img/border_horizontal.png), url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+.nav-link {
+    color: #ffffff;
+    font-size: 1.5rem;
+   /** transition: background-color .5s ease-in-out; agrega una pequeña transicion en el background del menu**/
+    font-family: 'Volkhov', serif;
+}
+.nav-link:hover {
+    color: #000000;
+}
+
+/** CAROUSEL **/
+.carousel-caption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+/**NUEVO SITIO**/
+.nuevo-sitio p {
+    font-family: 'Raleway', sans-serif;
+    color: #979797;
+    font-size: 1.2rem;
+}
+/** SERVICIOS **/
+.imagen-servicio img {
+    border: 6px solid #ffffff;
+}
+.imagen-servicio img:hover { /**agrega una transicion a la imagen **/
+    transform: scale(1.2); 
+}
+.servicio-info {
+    background-color: #ffffff;
+    margin-top: -5rem;
+}
+.servicio-info .btn-primary {
+    border-radius: 0;
+    background-color: #e082a8;
+    border: none;
+}
+
+/** HORARIOS **/
+.horario {
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+.horario h2 {
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.horario .table {
+    border: 2px solid #e082a8;
+}
+.horario .table thead {
+    background-color: #e082a8;
+    font-size: 1.2rem;
+}
+/**.horario .table td, .horario .table thead th {
+    border: none;
+} **/
+.horario .table tbody tr td {
+    padding: .40rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+}
+.bg-horario {
+    background-image: url(../img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+}
+/** PRODUCTOS **/
+.productos .card {
+    border: none;
+}
+.productos .card a {
+    color: #000000;
+}
+.productos .card a {
+    text-decoration: none; /** elimina el enlace que esta por defecto **/
+}
+.productos .card h3 {
+    color: #e082a8;
+    font-size: 1.3rem;
+    font-family: 'Volkhov';
+}
+.productos .card .precio {
+    font-size: 1.5rem;
+    color: #979797;
+    font-family: 'Volkhov';
+}
+/** CITAS **/
+.citas {
+    background-image: url(../img/bg_citas.jpg);
+    background-repeat: no-repeat; /** por defecto todos los backgroud se repiten **/
+    background-position: center center;
+    /**background-size: cover; hace que la imagen cubra todo el container pero causa problemas en tablets o smartphones**/
+    background-attachment: fixed;
+    color: #ffffff;
+}
+@media (min-width: 992px) {
+    .citas {
+        background-size: cover;
+    }
+}
+.citas h3 {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+.citas p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+.btn-primary {
+    background-color: #4bcfc2;
+    border: 0;
+    border-radius: 0;
+    padding: .45rem 5rem;
+    font-size: 1.5rem;
+    font-family: 'Cabin', sans-serif;
+}
+.btn-primary:hover {
+    background-color:#1fa194;
+}
+.copyright {
+    color: #979797;
+    font-size: 1rem;
+}
+/** HERO **/
+.hero {
+    position: relative;
+}
+.hero h2 {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #e082a8;
+    font-family: 'Volkhov', serif;
+    font-weight: 800; /** le da un grosor a la letra **/
+    color: #ffffff;
+}
+.contenido-principal p {
+    font-size: 1.2rem;
+    line-height: 2rem; /** interlineado **/
+    font-family: 'Cabin', sans-serif;
+}
+/** SIDEBAR **/
+aside {
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+/** SERVICIOS **/
+#servicios .card-header {
+    background-color: #e082a8;
+    padding: 0 1rem;
+}
+#servicios .card-header .btn-link {
+    color: #ffffff;
+    font-family: 'Volkhov';
+    font-size: 1.4rem;
+}
+.cupon {
+    border: 3px dashed #ffffff;
+}
+.cupon .display-4 {
+    font-size: 1.8rem;
+    font-family: 'Cabin';
+}
+.sidebar h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
+/** PRODUCTOS**/
+@media (min-width: 576px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+}
+@media (min-width: 768px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+.titulo {
+    font-size: 2.5rem;
+    color: #1fa194;
+    font-family: 'Lobster', cursive;
+}
+/** CONTACTO **/
+.formulario-contacto {
+    border: 2px solid #9a9a9a;
+    background-color: #ffffff;
+}
